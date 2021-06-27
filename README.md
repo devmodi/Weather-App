@@ -11,6 +11,6 @@ A simple weather app that display weather info of a city.
 
 ```
 pip install flask
-pip install SQLAlchemy
+pip install flask-sqlalchemy
 pip install requests
 ```
