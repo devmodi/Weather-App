@@ -7,10 +7,8 @@ A simple weather app that display weather info of a city.
 
 [Api used to fetch weather data](https://openweathermap.org/api)
 
-## Dependencies
+## Build
 
 ```
-pip install flask
-pip install flask-sqlalchemy
-pip install requests
+pip install -r requirements.txt
 ```
