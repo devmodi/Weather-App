@@ -1,7 +1,7 @@
-from api import API_KEY
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
+from dotenv import load_dotenv
 import requests
 import sys
 import os
@@ -10,6 +10,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weather.db'
 app.config['SECRET_KEY'] = os.urandom(24)
 db = SQLAlchemy(app)
+load_dotenv()
+API_KEY = os.environ.get('API_KEY')
 
 
 class City(db.Model):

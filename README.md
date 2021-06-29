@@ -12,3 +12,9 @@ A simple weather app that display weather info of a city.
 ```
 pip install -r requirements.txt
 ```
+
+## Usage
+
+First, you need an API key to use it (https://openweathermap.org/api)
+
+Then create a .env file in the root directory of the project folder to store the key.
